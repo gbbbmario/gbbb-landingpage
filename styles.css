@@ -1,0 +1,126 @@
+/* Reset & base */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Roboto Mono", monospace;
+  scroll-behavior: smooth;
+}
+
+/* Hero section */
+.hero {
+  height: 100vh;
+  background-image: url('your-image.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h1 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 4rem;
+  font-weight: 100; /* ultra thin */
+  margin-bottom: 40px;
+}
+
+.scroll-button {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  font-size: 2rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.scroll-button:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Info section */
+.info {
+  padding: 100px 20px 140px; /* bottom padding to avoid overlap with fixed footer */
+  background: #f0f0f0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.info h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Footer (fixed at bottom, hidden on hero) */
+.footer {
+  display: none; /* Initially hidden */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: flex; /* Use flex for layout */
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer .scroll-button {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.footer .scroll-button:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+
+
+/* scramble */
+.text {
+      font-weight: 200;
+      font-size: 5rem;
+      color: #fafafa;
+}
+.dud {
+    color: darkred;
+}
+
+.blue {
+  color: blue !important;
+}
+
+.red {
+  color: darkred;
+}
+
+.black {
+  color: black !important;
+}

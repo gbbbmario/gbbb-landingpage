@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="hero" id="hero">
+    <div class="overlay">
+      <h1 class="text">Welcome to Our Site</h1>
+      <button class="scroll-button" onclick="scrollToContent()">↓</button>
+    </div>
+  </section>
+
+  <section class="info" id="info">
+    <h2>Unser Angebot:</h2>
+    <p>- Web-Application Penetration Testing (Black Box)</p>
+    <p>- Source Code Review (White Box)</p>
+    <p>- Developer Trainings</p>
+    <p>- Beratung sichere Entwicklungsprozesse</p>
+    <p>- Phishing und Awarness Kampagnen</p>
+    <p>- Mitarbeiterschulungen</p>    
+    <p>- Individuelle Workshops (Fragen Sie nach!)</p>
+    <!-- Add more content here to test scrolling -->
+    <br>
+    <h2>Kontakt: mario@goodbitbadbit.at</h2>
+  </section>
+
+  <footer class="footer" id="footer">
+    <p>&copy; 2025 Good Bit Bad Bit</p>
+    <button class="scroll-button" onclick="scrollToTop()">↑</button>
+  </footer>
+
+  <script>
+    const footer = document.getElementById('footer');
+    const hero = document.getElementById('hero');
+    const info = document.getElementById('info');
+
+    function scrollToContent() {
+      info.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function scrollToTop() {
+      hero.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Show footer only when scrolled past hero section
+    function checkFooterVisibility() {
+      const heroBottom = hero.getBoundingClientRect().bottom;
+      // If hero bottom is above or at viewport top, show footer
+      if (heroBottom <= 0) {
+        footer.style.display = 'flex';
+      } else {
+        footer.style.display = 'none';
+      }
+    }
+
+    window.addEventListener('scroll', checkFooterVisibility);
+    window.addEventListener('load', checkFooterVisibility);
+  </script>
+  <script src="scramble.js"></script>
+</body>
+</html>
