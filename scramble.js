@@ -58,7 +58,6 @@ const phrases = [
   'Good Bit',  // first phrase - blue
   'IT-Security Consulting',
   'Bad Bit',    // last phrase - red
-  'Web-Application Security'
 ];
 
 const colors = ['blue', 'black', 'red'];

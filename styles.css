@@ -3,7 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Share Tech Mono', monospace;
   scroll-behavior: smooth;
 }
 
@@ -25,13 +25,14 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 100;
 }
 
 .overlay h1 {
-  font-family: 'IBM Plex Mono', monospace;
   font-size: 4rem;
   font-weight: 100; /* ultra thin */
   margin-bottom: 40px;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 .scroll-button {
