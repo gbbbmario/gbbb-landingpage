@@ -52,15 +52,12 @@ class TextScramble {
     }
 }
   
-
-
 const phrases = [
   'Good Bit',  // first phrase - blue
-  'IT-Security Consulting',
   'Bad Bit',    // last phrase - red
 ];
 
-const colors = ['blue', 'black', 'red'];
+const colors = ['blue', 'red'];
 
 const el = document.querySelector('.text');
 const fx = new TextScramble(el);
